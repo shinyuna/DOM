@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script>
+        $(document).ready(function(){
+           $(window).scrollTop(0); 
+           $("#btn").click(function(){
+               var here = $(document).scrollTop();
+//               alert(here);
+               alert("DOM에 대해서 공부해 봅시다.")
+           });
+        });
+    </script>
+</head>
+<style>
+    *{margin:0 auto;padding:0;}
+    body{height:4500px; background-color: #000;}
+    #progress{background:forestgreen; height: 1%; display: block; z-index: 40; position: fixed;}
+</style>
+<body>
+    <div id="progress" data-0="width:0%; background-color:rgb(0,0,255); transform[bounce]:rotata(0deg)" data-end="width:100%; background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);"></div>
+    <div id="btn">WHAT?</div> 
+    <div id="box1" class="fix" data-0="top:0" data-200="top:0;opacity:1;" data-300="opacity:0;" >
+        <h1>DOM이란 무엇인가?</h1>
+    </div>
+    <div id="box2" class="fix" data-300="opacity:0;left:100%; " data-400="opacity:1;left:0%; top:30%;" data-1500="opacity:0;">
+        <p>문서 객체 모델(The Document Object Model, 이하 DOM) 은 HTML, XML 문서의 프로그래밍 interface 이다.<br>
+        DOM은 문서의 구조화된 표현(structured representation)을 제공하며 프로그래밍 언어가 DOM 구조에 접근할 수 있는 방법을 제공하여 그들이 문서 구조, 스타일, 내용 등을 변경할 수 있게 돕는다.<br>DOM 은 구조화된 nodes와 property 와 method 를 갖고 있는 objects로 문서를 표현한다. 이들은 웹 페이지를 스크립트 또는 프로그래밍 언어들에서 사용될 수 있게 연결시켜주는 역할을 담당한다.</p>
+    </div>
+    <div id="box3" class="fix" data-1500="opacity:0; top:100%;" data-1600="opacity:1; top:20%; right:40%;" data-2600="opacity:0;" >
+        <img src="./images/02.JPG" alt="트리구조">
+        <p>DOM은 문서를 트리구조로 표현을 한다.</p>
+        <p>↑ HTML의 트리 구조이다.</p>
+    </div>
+    
+<!--    페럴렉스 스크롤배경-->
+    <div id="bg1" class="fix" data-2550="opacity:0; top:100%;" data-2700="bacgkgorund-position:0px 0px; opacity:1; top:0%;" data-end="background-position:-500px -5000px">dd</div>
+    <div id="bg2" class="fix"  data-2550="opacity:0; top:100%;" data-2700="background-position:0px 0px; top:0%; opacity:1;" data-end="background-position:-500px -3500px; "></div>
+  <div id="bg3" class="fix"  data-2550="opacity:0; top:100%;" data-2700="background-position:0px 0px; top:0%; opacity:1;" data-end="background-position:-500px -2000px; "></div>
+   
+   <div class="cacao fix" data-2700="opacity:0;" data-2750="bottom:0; opacity:1; left:0%;" data-2800="left:10%;" data-2900="left:20%;" data-3000="left:40%;" data-3300="left:60%" data-end="bottom:0; left:100%;" ></div>
+   
+   <div id="box4" class="fix" data-3400="opacity:0; left:100%;" data-3550="opacity:1;left:0%; top:40%; "><p>END</p></div>
+   
+    <script src="./js/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init();
+    </script>
+</body>
+</html>

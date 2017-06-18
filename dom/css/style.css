@@ -1,0 +1,26 @@
+html{font-size: 10px;}
+#btn{ -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    position: fixed; top: 2%; left: 10%; padding: 1px 20px; line-height: 30px; display: block; border-radius: 4px; color: rgba(255, 255, 255, 0.85); font-size: 1.5rem;
+box-shadow: rgba(255, 255, 255, 0.85) 0 0px 0px 2px inset; z-index: 999; }
+#btn:hover{ box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset; cursor: pointer;}
+
+.fix{position: fixed; z-index: 4;}
+#box1{ text-align: center; width: 100%; height: 700px; line-height: 850px; font-size: 3rem; color: #fff; }
+#box2{text-align: center;color: #fff; font-size: 2rem; width:1800px; line-height: 60px; margin-top: 70px; height: 400px;}
+#box3 {text-align: center; height: 700px; font-size: 3rem; color: #fff;  }
+#box3 img{width: 500px;}
+#gb{width: 100%;}
+
+
+#bg1,#bg2,#bg3{top: 0;left: 0;width: 100%;height: 100%;}
+#bg1{ z-index: -1;background: url(../images/bubbles.png) repeat 0 0;}
+#bg2{ z-index: -2;background: url(../images/bubbles2.png) repeat 0 0;}
+#bg3{ z-index: -3;background: url(../images/bubbles3.png) repeat 0 0;}
+
+.cacao{background: url(../images/lion.gif) repeat 0 0; width: 25%; height: 50%;} 
+
+#box4{text-align: center; color: #fff; font-size: 10rem; width: 100%; height: 100%;}
